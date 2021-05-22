@@ -1,0 +1,457 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700;800;900&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+}
+
+html{
+    scroll-behavior: smooth;
+}
+
+
+/* ================== Global CSS Start =============== */
+
+:root {
+    --ai-white: #fff !important;
+    --ai-danger: #ef3139 !important;
+    --ai-blue: #022D62 !important;
+    --ai-gray: #676C71 !important;
+    --ai-black: #000000 !important;
+    --ai-dark: #444 !important;
+    --ai-light:rgba(240, 240, 240) !important;
+    --diwaakarFont: 'Poppins', sans-serif;
+}
+
+.ai-text-danger{
+    color: var(--ai-danger);
+}
+
+
+a {
+    outline: medium none !important;
+    color: var(--ai-dark);
+    -webkit-transition: all 0.3s ease-in-out;
+    transition: all 0.3s ease-in-out;
+}
+
+.dropdown-menu a {
+    color: var(--ai-dark);
+}
+
+
+.ai-btn {
+    font-size: .9rem;
+    background-color: var(--ai-white);
+    padding: 13px 50px;
+    border-radius: 40px;
+    text-decoration: none;
+    font-weight: 500;
+    color: var(--ai-dark)
+}
+
+.ai-btn:hover {
+    text-decoration: none;
+    background: var(--ai-danger);
+    color: var(--ai-white);
+}
+
+
+.ai-head {
+    font-size: 2.2rem;
+    color: var(--ai-danger);
+    font-weight: 600;
+}
+
+.ai-para {
+    color: var(--ai-gray);
+    font-weight: 400;
+    line-height: 1.7;
+    font-size: 1.1rem
+}
+
+
+
+
+/* background-image: linear-gradient(rgba(2, 45, 98, 0.85), rgba(2, 45, 98, 0.85)), url('../images/headerSlider.jpg'); */
+
+/* ================== Header CSS Start =============== */
+#header {
+    width: 100%;
+    height: 100vh;
+    background-image: linear-gradient(rgba(0, 0, 0, 0.75), rgba(0, 0, 0, 0.75)), url('../images/headerSlider.jpg');
+    background-size: cover;
+    background-position: center;
+    /* object-fit: contain; */
+}
+
+#header .banner-text {
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+
+#header .banner-text h1 {
+    color: var(--ai-white);
+    text-align: center;
+    line-height: 1.4;
+    font-size: 3rem;
+}
+
+#header .banner-text .banner-text-item a {
+    color: var(--ai-white);
+    font-weight: 500;
+    /* text-shadow: 0px 1px 1px rgba(0, 0, 0, 0.4); */
+    margin: 0 10px;
+    position: relative;
+    height: fit-content;
+    font-size: 1.1rem;
+    display: inline-block;
+}
+
+#header .banner-text .banner-text-item a:hover {
+    text-decoration: none;
+    color: var(--ai-danger)
+}
+
+#header .banner-text .banner-text-item a:after {
+    content: "";
+    position: absolute;
+    top: 11%;
+    right: -15px;
+    height: 20px;
+    width: 2px;
+    border-right: 2px solid var(--ai-danger);
+}
+
+#header .banner-text .banner-text-item a:nth-last-child(1):after {
+    border-right: 2px solid transparent;
+}
+
+
+
+
+/* ================== Navbar CSS Start =============== */
+
+#navbar {}
+
+#navbar.ai-bg-blue {
+    background-color: var(--ai-black);
+}
+
+#navbar #nav-bg.ai-bg-blue {
+    background-color: rgba(0, 0, 0, 0.75);
+}
+
+#navbar .navbar-brand {
+    font-weight: bold;
+    display: inline-block;
+}
+
+
+#navbar .navbar-brand img {
+    width: 90px;
+    object-fit: contain !important;
+}
+
+#navbar .nav-link {
+    color: var(--ai-white) !important;
+    font-weight: 450;
+    margin: 0 10px;
+}
+
+#navbar .nav-link {
+    color: var(--ai-white) !important;
+    font-weight: 450;
+    margin: 0 10px;
+}
+
+#navbar .nav-item.active .nav-link {
+    color: var(--ai-danger) !important;
+}
+
+
+
+/* ================== About CSS Start =============== */
+#about{
+    padding: 4rem 0;
+    scroll-margin: 2rem;
+}
+
+#about .about-img{
+    height: 100%;
+    width: 300px;
+    margin: 0 auto;
+}
+
+#about .about-img img{
+
+}
+/* ================== About CSS End =============== */
+
+
+
+/* ================== Services CSS Start =============== */
+
+#services {}
+
+#services .srvicesCards .card {
+    background-color: var(--ai-white);
+    padding: 1rem 0 0rem !important;
+}
+
+#services .srvicesCards .card .card-icon-top {
+    font-size: 5rem !important;
+    color: var(--ai-danger);
+    text-align: center;
+}
+
+
+#services .srvicesCards .card .card-title {
+    font-size: 1.2rem;
+    color: var(--ai-dark);
+    text-align: center;
+}
+
+#services .srvicesCards .card ul {
+    margin-top: 0rem;
+}
+
+
+#services .srvicesCards .card li {
+    list-style: none;
+    color: var(--ai-white);
+    margin-top: 0.5rem;
+    text-align: center;
+}
+
+#services .srvicesCards .card li a {
+    color: var(--ai-gray);
+    font-size: .85rem;
+    display: inline-block !important;
+    transition: all .5s linear;
+}
+
+#services .srvicesCards .card li:hover a {
+    text-decoration: none;
+    color: var(--ai-danger);
+    transform: translateX(-5px) !important;
+    transition: all .5s linear;
+}
+
+#services .srvicesCards .card li .fa-long-arrow-alt-right {
+    display: inline-block;
+    color: var(--ai-white);
+    font-size: 1rem;
+    transition: all .5s linear;
+    opacity: 0;
+    padding-top: 2px;
+}
+
+#services .srvicesCards .card li:hover .fa-long-arrow-alt-right {
+    display: inline-block;
+    transform: translateX(10px) !important;
+    transition: all .5s linear;
+    color: var(--ai-danger);
+    opacity: 1;
+
+
+}
+
+
+
+
+
+/* ================== Project CSS Start =============== */
+
+#project{
+    padding: 3rem 0;
+}
+
+#project .project-link{
+
+}
+
+#project .project-link ul{
+display: flex;
+flex-wrap: wrap;
+justify-content: center;
+}
+
+#project .project-link ul li{
+list-style: none;
+margin: .5rem;
+background-color : var(--ai-light);
+padding: 3px 10px;
+color: var(--ai-dark);
+cursor: pointer;
+border-radius: 3px;
+}
+
+#project .project-link ul li.active{
+    background-color : var(--ai-danger);
+    color: var(--ai-white)
+}
+
+#project .project-product{
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap
+}
+
+#project .project-product .itemBox{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: .5rem;
+    background-color: var(--ai-light);
+    border-radius: 3px;
+    width: 200px;
+    height: 200px;
+}
+
+#project .project-product .itemBox.hide{
+    display: none;
+}
+
+
+
+
+/* ================== Testimonial CSS Start =============== */
+#testimonial {
+    padding: 3rem 0;
+    scroll-margin: 5rem;
+}
+
+#testimonial .testiImgBox{
+    display: flex;
+    justify-content: center;
+}
+
+#testimonial .testiImgBox img{
+    width: 100px;
+    height: 100px;
+    border-radius: 50%;
+    border: 2px solid var(--ai-danger)
+}
+
+#testimonial .testiContent{
+    margin-top: 2rem;
+}
+
+#testimonial .testiContent{
+    width: 100% !important;
+    margin-top: 2rem;
+}
+
+#testimonial .testiText,
+#testimonial .testiAuthor
+{
+    width: 70%;
+    margin: 0 auto;
+    text-align: center
+}
+
+
+#testimonial .testiText p {
+    color: var(--ai-dark);
+    font-size: 1rem
+}
+
+#testimonial .testiAuthor h6{
+    color: var(--ai-danger);
+    font-weight: 600;
+    margin-top: 2rem;
+}
+
+#testimonial .testiAuthor span{
+    color: var(--ai-gray);
+    
+}
+
+#testimonial .owl-nav{
+    width: 100%;
+    height: 100%;
+    position: absolute !important;
+    top: 0;
+    display: flex;
+    justify-content: space-between !important;
+    align-items: center;
+    padding: 0 20px;
+}
+
+#testimonial .owl-prev,
+#testimonial .owl-next{
+color: var(--gray) !important;
+font-size: 2.5rem !important;
+background: none !important;
+}
+
+#testimonial .owl-prev span,
+#testimonial .owl-next span{
+padding: 20px 10px !important;
+
+}
+
+#testimonial .owl-prev:focus,
+#testimonial .owl-next:focus{
+    background: none !important;
+    border: none !important;
+    outline: none;
+}
+
+#testimonial .owl-dots{
+    display: none !important;
+}
+/* ================== Testimonial CSS End =============== */
+
+
+
+/* ================== Contact CSS Start =============== */
+#contact{
+    padding: 2rem 0;
+}
+/* ================== Contact CSS Start =============== */
+
+
+
+/* ================== Footer CSS Start =============== */
+#footer {
+    padding-top: 1rem;
+    padding-bottom: 0px;
+    border-top: 1px solid var(--ai-gray);
+    box-sizing: border-box;
+    background-color: rgb(241, 241, 241);
+}
+
+
+#footer .footer-socail-icon {
+    width: 80%;
+    display: flex;
+    justify-content: space-between;
+}
+
+#footer .footer-socail-icon a {
+    display: inline-block;
+    font-size: 1.2rem;
+    color: var(--ai-dark);
+}
+
+#footer .footer-socail-icon a:hover {
+    color: var(--ai-danger);
+}
+
+#footer .footer-copyright p {
+    color: var(--ai-dark);
+    font-size: .85rem;
+}
+
+#footer .footer-copyright p a {
+    color: var(--ai-danger);
+    font-weight: 500;
+}
